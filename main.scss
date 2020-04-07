@@ -1,0 +1,1077 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 80px;
+}
+@media (max-width: 1440px){
+  .container{
+    max-width: 1180px!important;
+  }
+}
+@media (min-width: 1441px){
+  .container{
+    max-width: 1312px!important;
+  }
+}
+@media (max-width: 768px){
+  .container{
+    max-width: 704px!important;
+  }
+}
+@media (max-width: 360px){
+  .container{
+    max-width: 328px!important;
+  }
+}
+p{
+  margin-bottom: 0;
+}
+a:hover{
+  color: initial;
+  text-decoration: none;
+}
+hr{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+// ul {
+//   list-style: none; /* Remove default bullets */
+// }
+//
+// ul li::before {
+//   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+//   color: #009DE8; /* Change the color */
+//   font-weight: bold; /* If you want it to be bold */
+//   display: inline-block; /* Needed to add space between the bullet and the text */
+//   width: 1em;
+//   font-size: 1.5em;
+//   margin-left: -1.4em;
+// }
+header{
+  display: flex;
+  flex-direction: column;
+  & .header-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .header-lower{
+    display: flex;
+    padding: 24px 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0,3s ease;
+    z-index: 10;
+    background-color: #ffffff;
+    & .menu-items{
+      display: flex;
+      margin: 0 auto;
+      & .menu-item{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #002B5B;
+        mix-blend-mode: normal;
+        margin-right: 24px;
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+    }
+    &.sticky{
+      position: fixed;
+    }
+  }
+}
+.hero{
+  background-image: url('images/hero.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 840px;
+  max-height: calc(100vh - 75px);
+  margin-bottom: 128px;
+  & .blue{
+    padding: 0 128px;
+    background-color: #002B5B;
+    max-width: 672px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & p.title{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: 3px;
+      color: #009DE8;
+    }
+    & h1{
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 88px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}
+section{
+  width: 100%;
+  & .overlaps{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+   .top{
+    position: relative;
+    padding: 72px 56px;
+    max-width: 752px;
+    background-color: #ffffff;
+    box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.04);
+    z-index: 3;
+    margin-left: -192px;
+    margin-top: 128px;
+    height: 100%;
+    & .longtext{
+      & .moretext{
+        display: none;
+        &.open{
+          display: block;
+        }
+      }
+    }
+    & h2{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      color: #262930;
+      margin-bottom: 32px;
+    }
+    & p{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 34px;
+      color: #4B4E57;
+      margin-bottom: 32px;
+      &.bold{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 34px;
+        color: #4B4E57;
+      }
+    }
+    & li{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 34px;
+      color: #262930;
+    }
+    & a{
+      flex-direction: row;
+      align-items: center;
+      & img{
+        transform: rotate(0deg);
+        &.rotate{
+        transform: rotate(180deg);
+        }
+      }
+      & p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 34px;
+        text-decoration-line: underline;
+        color: #262930;
+        margin-bottom: 0;
+        margin-right: 16px;
+        display: inline-flex;
+        & span{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 34px;
+          color: #262930;
+          margin-bottom: 0;
+          &.close-sec{
+            display: none;
+          }
+        }
+      }
+      &#more{
+        & p span.close-sec{
+          display: none;
+        }
+        & img{
+          transform: rotate(0deg);
+          &.rotate{
+          transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  & .textarea{
+    & .longtext{
+      & .moretext{
+        display: none;
+        &.open{
+          display: block;
+        }
+      }
+    }
+    & h2{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      color: #262930;
+      margin-bottom: 32px;
+    }
+    & p{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 34px;
+      color: #4B4E57;
+      margin-bottom: 32px;
+      &.bold{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 34px;
+        color: #4B4E57;
+      }
+    }
+    & li{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 34px;
+      color: #262930;
+    }
+    & a{
+      flex-direction: row;
+      align-items: center;
+      & p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 34px;
+        text-decoration-line: underline;
+        color: #262930;
+        margin-bottom: 0;
+        margin-right: 16px;
+        display: inline-flex;
+        & span{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 34px;
+          color: #262930;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  span.close-sec{
+    display: none;
+  }
+  & .center{
+    max-width: 752px;
+    width: 100%;
+    height: 686px;
+    position: relative;
+    width: calc(100% - 128px);
+    background-size: cover;
+    background-image: url(images/Nordecon-yearbook-1.jpeg);
+    background-position: center;
+    & .bottom{
+      position: absolute;
+      right: -64px;
+      bottom: -64px;
+      z-index: -1;
+    }
+  }
+  & h4{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #009DE8;
+    margin-top: 192px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  & .bigPic{
+    margin: 0 auto;
+    width: 100%;
+  }
+  &#section-1{
+    margin-bottom: 112px;
+  }
+  &#section-3{
+    padding: 128px 0 182px 0;
+    & .textarea{
+      margin-right: 18px;
+    }
+    & .center{
+      background-image: url(images/Nordecon-woods.jpeg);
+      max-width: 640px;
+      width: 100%;
+      height: 640px;
+      & .bottom{
+        left: -64px;
+        right: initial;
+      }
+    }
+  }
+  &#section-6{
+    background-image: url(images/Nordecon-city.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-bottom: 128px;
+    background-position: center;
+    & .top{
+      margin-left: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 128px 160px;
+      width: 50%;
+      max-width: unset;
+    }
+  }
+  &#section-7{
+    & .overlaps{
+      margin-bottom: 320px;
+    }
+    & .textarea{
+      margin-right: 18px;
+    }
+    & .center{
+      background-image: url(images/Nordecon-building.jpeg);
+      max-width: 752px;
+      width: 100%;
+      height: 686px;
+      & .bottom{
+        right: -64px;
+        left: initial;
+      }
+    }
+  }
+  &#quotes{
+    background-color: rgba(75, 78, 87, 0.05);
+    padding: 128px 0;
+    display: flex;
+    justify-content: center;
+    & .row{
+      justify-content: center;
+    }
+    & .slick-slider{
+      max-width: 976px;
+      width: 100%;
+      & .slick-next{
+        right: -53px;
+      }
+      & .slick-prev{
+        left: -80px;
+      }
+    }
+    & .bluequote{
+      padding: 72px 56px 48px 56px;
+      background-color: #002B5B;
+      display: flex!important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & img{
+        margin-bottom: 56px;
+      }
+      & p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 34px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+      & p.quote{
+        font-family: Montserrat;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+      }
+      & p.bold{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+      }
+    }
+    .slick-prev:before, .slick-next:before{
+      display: none;
+    }
+  }
+  &#section-8{
+    padding: 128px 0 16px 0;
+    & .textarea{
+      margin-right: 18px;
+    }
+    & .center{
+      background-image: url(images/Nordecon-safety.jpeg);
+      max-width: 640px;
+      width: 100%;
+      height: 640px;
+      & .bottom{
+        right: -64px;
+        left: initial;
+      }
+    }
+    & table{
+      margin-top: 128px;
+    }
+  }
+  &#section-9{
+    padding: 128px 0;
+    background-color: rgba(75, 78, 87, 0.05);
+    & .textarea{
+      margin-right: 18px;
+    }
+    & .center{
+      background-image: url(images/Nordecon-eco.jpeg);
+      max-width: 640px;
+      width: 100%;
+      height: 640px;
+      & .bottom{
+        right: -64px;
+        left: initial;
+      }
+    }
+    & table{
+      margin-top: 128px;
+    }
+  }
+  &#section-10{
+    padding: 128px 0;
+    & .row{
+      justify-content: flex-start;
+    }
+    & .bluequote{
+      background-color: #002B5B;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 72px 56px 48px 56px;
+      height: 100%;
+      & img{
+        margin-bottom: 56px;
+      }
+      & p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 34px;
+        color: #FFFFFF;
+      }
+      & p.quote{
+        font-family: Montserrat;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+      }
+      & p.bold{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+      }
+    }
+    & .col-lg-5{
+      & p{
+        margin-bottom: 32px;
+      }
+    }
+  }
+  &#section-11{
+    background-image: url(images/Nordecon-digi.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-bottom: 128px;
+    background-position: center;
+    & .top{
+      margin-left: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 128px 160px;
+      width: 50%;
+      max-width: unset;
+    }
+  }
+  &#section-12{
+    & .overlaps{
+      margin-bottom: 192px;
+    }
+    & .textarea{
+      margin-right: 18px;
+    }
+    & .center{
+      background-image: url(images/Nordecon-tootajad.jpeg);
+      max-width: 752px;
+      width: 100%;
+      height: 686px;
+      & .bottom{
+        right: -64px;
+        left: initial;
+      }
+    }
+  }
+  &#section-13{
+    background-image: url(images/pattern.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 128px 0 144px 0;
+    & .row{
+      justify-content: center;
+    }
+    & h2{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 64px;
+    }
+    & p{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 34px;
+      color: #FFFFFF;
+      padding-bottom: 24px;
+      margin-left: 28px;
+    }
+    & .col-4{
+      padding-top: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      &:first-of-type{
+        margin-right: 36px;
+      }
+    }
+  }
+  &#section-14{
+    background-color: rgba(75, 78, 87, 0.05);
+    padding: 128px 0 16px 0;
+    & .textarea{
+      margin-right: 18px;
+    }
+    & .center{
+      background-image: url(images/Nordecon-bw.jpeg);
+      max-width: 640px;
+      width: 100%;
+      height: 640px;
+      & .bottom{
+        right: -64px;
+        left: initial;
+      }
+      &.secondpart{
+        background-image: url(images/Nordecon-dterminal.jpeg);
+      }
+      &.thirdpart{
+        background-image: url(images/Nordecon-veskitammi.jpeg);
+      }
+    }
+    & h4{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 34px;
+      letter-spacing: 1px;
+      color: #009DE8;
+      text-align: left;
+      margin-bottom: 48px;
+    }
+  }
+  &#gallery{
+    padding: 128px 0;
+    & h2{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      text-align: center;
+      color: #262930;
+      margin-bottom: 64px;
+    }
+    & #projects-gallery{
+      justify-content: center;
+      & .col-lg-3{
+        max-width: 304px;
+        margin: 16px;
+        position: relative;
+        &:nth-of-type(4n-7){
+          margin-left: 0;
+        }
+        &:nth-of-type(4n){
+          margin-right: 0;
+        }
+        & .img-overlay{
+          opacity: 0;
+          background-color: #009DE8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s ease;
+          position: absolute;
+          top: 16px;
+          left: 16px;
+          right: 16px;
+          bottom: 16px;
+          cursor: pointer;
+          & p{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 34px;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+          }
+        }
+        &:hover{
+          & .img-overlay{
+            opacity: 1;
+          }
+        }
+        &:nth-of-type(n+9){
+          display: none;
+        }
+        & img{
+          width: 100%;
+        }
+      }
+    }
+    & .loadmore{
+      background-color: #009DE8;
+      padding: 16px 32px;
+      margin: auto;
+      margin-top: 48px;
+      display: inline-flex;
+      cursor: pointer;
+      & p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-right: 16px;
+      }
+    }
+  }
+  &#videos{
+    background-color: rgba(75, 78, 87, 0.05);
+    padding: 128px 0;
+    & h2{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      text-align: center;
+      color: #262930;
+      margin-bottom: 48px;
+    }
+    & #video-gallery{
+      & img{
+        width: 100%;
+      }
+    }
+  }
+  &#leaders{
+    padding: 128px 0;
+    & h2{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      text-align: center;
+      color: #262930;
+      margin: auto;
+      margin-bottom: 48px;
+    }
+    & img{
+      width: 100%;
+    }
+  }
+  & hr+.row{
+    margin-top: 96px;
+  }
+  & table{
+    width: 100%;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    &:first-of-type{
+      margin-top: 0;
+    }
+    & thead{
+      & .col-4{
+        padding: 16px;
+        & h5{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: #002B5B;
+        }
+      }
+      & .col-2{
+        padding: 16px;
+        & h5{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: right;
+          color: #009DE8;
+        }
+      }
+    }
+    & tbody{
+      & .row:nth-of-type(odd){
+        background-color: rgba(75, 78, 87, 0.05);
+      }
+      & .col-4{
+        padding: 16px;
+        & h5{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: #002B5B;
+        }
+      }
+      & .col-2{
+        padding: 16px;
+        & h5{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: right;
+          color: #009DE8;
+        }
+      }
+    }
+  }
+  & .centeralign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 112px;
+    & p.bold{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 34px;
+      text-align: center;
+      color: #262930;
+      margin-bottom: 56px;
+    }
+  }
+}
+
+/******** TÕNU CSS ********/
+$light-blue: #009DE8;
+$dark-blue: #002B5B;
+$text-darker: #262930;
+$text-dark: #4B4E57;
+$gray: rgba(75, 78, 87, 0.05);
+ul {
+  margin: 0;
+  padding-left: 16px;
+  list-style: none; /* Remove default bullets */
+  li {
+    font-family: Montserrat, sans-serif;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 34px;
+    color: $text-darker;
+  }
+}
+ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $light-blue; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  margin-right: 8px;
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+p {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 34px;
+  color: $text-dark;
+  overflow: hidden;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 52px;
+  color: $text-darker;
+  margin-bottom: 32px;
+}
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 34px;
+  margin-bottom: 32px;
+  color: $text-darker;
+}
+h4 {
+
+}
+body>section {
+  .small {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &#key-figures {
+    background:url(images/nordecon-pattern.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 128px 0 144px 0;
+    h2 {
+      margin-bottom: 64px;
+    }
+    .row {
+      width: calc(100% + 64px);
+      margin-bottom: 80px;
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+      * {
+        margin: 0;
+        color: white;
+      }
+      div:nth-of-type(2) {
+        .figure {
+
+        }
+      }
+    }
+    .figure {
+      margin: 0 16px;
+      width: calc(100% - 32px);
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    h4 {
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+    .figure-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      img {
+        margin-right: 24px;
+      }
+    }
+    h2 {
+      color: white;
+      text-align: center;
+    }
+  }
+  .row {
+    // margin: 0 auto;
+    // width: 100%;
+    // max-width: 1312px;
+    .image-wrap {
+      margin-right: 144px;
+      .image-inner {
+        position: relative;
+      }
+      img:first-of-type {
+        position: relative;
+        width: 100%;
+        max-width: 640px;
+        height: 640px;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .pattern {
+        position: absolute;
+        bottom: -64px;
+        right: -64px;
+        z-index: 0;
+        max-height: 576px;
+      }
+    }
+  }
+}
+.section-gray {
+  background-color: $gray;
+}
+.section-white {
+  background-color: white;
+}
+#accordion-1{
+  padding: 128px 0 94px 0;
+}
+#accordion-2 {
+  padding: 128px 0 182px 0;
+  .image-wrap {
+    margin-right: 0;
+  }
+  .accordion-wrap {
+    order: -1;
+    margin-right: 144px;
+  }
+  .pattern {
+    right: unset;
+    left: -64px;
+  }
+}
+.accordion-wrap {
+  width: 100%;
+  max-width: 528px;
+  .accordion {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid rgba(75, 78, 87, 0.15);
+    color: $light-blue;
+    cursor: pointer;
+    padding: 32px 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    transition: 0.25s linear;
+    p {
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+    }
+    &:last-of-type {
+      border-bottom: 1px solid rgba(75, 78, 87, 0.15);
+    }
+    &.active {
+      padding-bottom: 0;
+      border-bottom: none;
+      &:after {
+        color: $light-blue;
+        content: "\2212";
+      }
+    }
+  }
+  .active, .accordion:hover {
+  }
+  .active {
+
+  }
+  .accordion:after {
+    content: '\002B';
+    color: $light-blue;
+    font-size: 35px;
+    font-weight: 100;
+    float: right;
+    margin-left: 5px;
+  }
+  .faq-panel {
+    width: 100%;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s linear;
+    &.active {
+      padding: 0 0 48px 0;
+      border-bottom: 1px solid rgba(75, 78, 87, 0.15);
+      &+.accordion{
+        border-top: none;
+      }
+    }
+    p {
+      margin: 10px 0;
+    }
+  }
+}
