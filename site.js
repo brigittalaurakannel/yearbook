@@ -62,21 +62,23 @@ $(function(){
 
     /* video gallery */
 
-    $('#video-gallery').lightGallery();
+    $('#video-gallery').lightGallery({
+      // subHtmlSelectorRelative: true
+    });
   	    /* smooth scroll to id */
 
   			$('.menu-item').click(function(){
   	      $('html, body').animate({
-  	          scrollTop: 0
+  	           scrollTop: $( $(this).attr('href') ).offset().top - 100
   	      }, 800);
   	      return false;
   	  });
-
-  	    $('a[href^="#"]').click(function(){
-  	      $('html, body').animate({
-  	          scrollTop: $( $(this).attr('href') ).offset().top - 100
-  	      }, 800);
-  	      return false;
-  	  });
+      //
+  	  //   $('a[href^="#"]').click(function(){
+  	  //     $('html, body').animate({
+  	  //         scrollTop: $( $(this).attr('href') ).offset().top - 100
+  	  //     }, 800);
+  	  //     return false;
+  	  // });
 
 })
