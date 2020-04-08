@@ -138,10 +138,12 @@ section {
     margin-left: -192px;
     margin-top: 128px;
     height: 100%; }
-    section .top .longtext .moretext {
-      display: none; }
-      section .top .longtext .moretext.open {
-        display: block; }
+    section .top .longtext {
+      margin-bottom: 32px; }
+      section .top .longtext .moretext {
+        display: none; }
+        section .top .longtext .moretext.open {
+          display: block; }
     section .top h2 {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
@@ -164,7 +166,8 @@ section {
         font-weight: bold;
         font-size: 16px;
         line-height: 34px;
-        color: #4B4E57; }
+        color: #4B4E57;
+        margin-bottom: 16px; }
     section .top li {
       font-family: Montserrat;
       font-style: normal;
@@ -200,11 +203,11 @@ section {
           margin-bottom: 0; }
           section .top a p span.close-sec {
             display: none; }
-      section .top a#more p span.close-sec {
+      section .top a.more p span.close-sec {
         display: none; }
-      section .top a#more img {
+      section .top a.more img {
         transform: rotate(0deg); }
-        section .top a#more img.rotate {
+        section .top a.more img.rotate {
           transform: rotate(180deg); }
   section .textarea .longtext .moretext {
     display: none; }
@@ -320,8 +323,7 @@ section {
       margin-top: 0;
       margin-bottom: 0;
       padding: 128px 160px;
-      width: 50%;
-      max-width: unset; }
+      max-width: 960px; }
   section#section-7 .overlaps {
     margin-bottom: 320px; }
   section#section-7 .textarea {
@@ -350,7 +352,8 @@ section {
         left: -80px; }
     section#quotes .bluequote {
       padding: 72px 56px 48px 56px;
-      background-color: #002B5B;
+      background-color: rgba(75, 78, 87, 0.05);
+      transition: 0.2s ease;
       display: flex !important;
       flex-direction: column;
       justify-content: center;
@@ -382,6 +385,11 @@ section {
         line-height: 34px;
         letter-spacing: 1px;
         color: #FFFFFF; }
+    section#quotes .slick-track {
+      display: flex;
+      align-items: center; }
+    section#quotes .slick-slide.slick-current.slick-active {
+      background-color: #002B5B; }
     section#quotes .slick-prev:before, section#quotes .slick-next:before {
       display: none; }
   section#section-8 {
@@ -471,6 +479,8 @@ section {
     margin-bottom: 192px; }
   section#section-12 .textarea {
     margin-right: 18px; }
+  section#section-12 .top .moretext p.bold:nth-of-type(n+2) {
+    margin-top: 16px; }
   section#section-12 .center {
     background-image: url(images/Nordecon-tootajad.jpeg);
     max-width: 752px;
@@ -528,6 +538,9 @@ section {
         left: initial; }
       section#section-14 .center.secondpart {
         background-image: url(images/Nordecon-dterminal.jpeg); }
+        section#section-14 .center.secondpart .bottom {
+          left: -64px;
+          right: initial; }
       section#section-14 .center.thirdpart {
         background-image: url(images/Nordecon-veskitammi.jpeg); }
     section#section-14 h4 {
@@ -728,7 +741,8 @@ footer {
   footer .footer-upper {
     background-color: rgba(75, 78, 87, 0.05);
     padding: 112px 0;
-    width: 100%;
+    margin: 0 80px;
+    width: 92%;
     display: flex; }
     footer .footer-upper .blue-btn {
       background-color: #009DE8;
@@ -777,6 +791,13 @@ ul li::before {
   margin-right: 8px;
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */ }
+
+ol li {
+  font-family: Montserrat, sans-serif;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 34px;
+  color: #262930; }
 
 p {
   font-family: Montserrat, sans-serif;
@@ -866,9 +887,25 @@ body > section .row .image-wrap .pattern {
 
 #accordion-1 {
   padding: 128px 0 94px 0; }
+  #accordion-1 .center {
+    background-image: url(images/accordion-img-1.jpeg);
+    max-width: 640px;
+    width: 100%;
+    height: 640px; }
+    #accordion-1 .center .bottom {
+      right: -64px;
+      left: initial; }
 
 #accordion-2 {
   padding: 128px 0 182px 0; }
+  #accordion-2 .center {
+    background-image: url(images/accordion-img-2.jpeg);
+    max-width: 640px;
+    width: 100%;
+    height: 640px; }
+    #accordion-2 .center .bottom {
+      right: -64px;
+      left: initial; }
   #accordion-2 .image-wrap {
     margin-right: 0; }
   #accordion-2 .pattern {

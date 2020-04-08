@@ -38,8 +38,7 @@ $(function(){
 
     /* quotes slider */
     $('.slick-carousel').slick({
-      infinite: false,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 2000,
       arrows: true
   	});
