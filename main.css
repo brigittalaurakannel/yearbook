@@ -30,6 +30,9 @@ hr {
   margin-top: 0;
   margin-bottom: 0; }
 
+.mobile {
+  display: none; }
+
 header {
   display: flex;
   flex-direction: column; }
@@ -1024,6 +1027,16 @@ body > section .row .image-wrap .pattern {
       margin-bottom: 0; }
       section#section-1 .overlaps {
         flex-direction: column; }
+      section#section-1 .top {
+        margin-top: 72px;
+        padding: 0;
+        box-shadow: none; }
+        section#section-1 .top h2 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 48px;
+          color: #262930; }
     section .center {
       height: 248px;
       width: calc(100% - 32px); }
@@ -1031,6 +1044,10 @@ body > section .row .image-wrap .pattern {
         right: -32px;
         bottom: -32px;
         max-width: 96px;
-        max-height: 160px; } }
+        max-height: 160px; }
+        section .center .bottom img {
+          width: 100%; }
+    section .top {
+      margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */
