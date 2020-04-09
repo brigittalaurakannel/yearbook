@@ -62,9 +62,42 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 32px;
+    margin: 24px 32px 0 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid rgba(75, 78, 87, 0.15);
+    & .header-left{
+      & img{
+        height: 32px;
+      }
+    }
+    & .header-right{
+      display: flex;
+      align-items: center;
+      & .lang-switch{
+        display: flex;
+        & a{
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #002B5B;
+          &.active{
+            color: #009DE8;
+          }
+        }
+        & p{
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #002B5B;
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+      }
+    }
   }
   & .blue-btn{
     background-color: #009DE8;
@@ -72,6 +105,7 @@ header{
     margin: auto;
     display: inline-flex;
     cursor: pointer;
+    margin-right: 32px;
     & p{
       font-family: Montserrat;
       font-style: normal;
@@ -100,7 +134,7 @@ header{
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         color: #002B5B;
         mix-blend-mode: normal;
@@ -383,7 +417,7 @@ section{
       margin-right: 18px;
     }
     & .center{
-      background-image: url(images/Nordecon-woods.jpeg);
+      background-image: url(images/portofranco.jpeg);
       max-width: 640px;
       width: 100%;
       height: 640px;
@@ -682,7 +716,7 @@ section{
         left: initial;
       }
       &.secondpart{
-        background-image: url(images/Nordecon-dterminal.jpeg);
+        background-image: url(images/Nordecon-yearbook-1.jpeg);
         & .bottom{
           left: -64px;
           right: initial;
@@ -718,16 +752,12 @@ section{
     }
     & #projects-gallery{
       justify-content: center;
+      margin-left: -31px;
+      margin-right: -31px;
       & .col-lg-3{
         max-width: 304px;
         margin: 16px;
         position: relative;
-        &:nth-of-type(4n-7){
-          margin-left: 0;
-        }
-        &:nth-of-type(4n){
-          margin-right: 0;
-        }
         & .img-overlay{
           opacity: 0;
           background-color: #009DE8;
@@ -854,7 +884,7 @@ section{
     margin-top: 96px;
     margin-bottom: 96px;
     &:first-of-type{
-      margin-top: 0;
+      margin-top: 112px;
     }
     & thead{
       & .col-4{
@@ -1033,7 +1063,7 @@ h3 {
 h4 {
 
 }
-body>section {
+section {
   .small {
     font-size: 14px;
     line-height: 24px;
@@ -1135,7 +1165,7 @@ body>section {
 #accordion-2 {
   padding: 128px 0 182px 0;
   & .center{
-    background-image: url(images/accordion-img-2.jpeg);
+    background-image: url(images/saskiaalusalu.jpeg);
     max-width: 640px;
     width: 100%;
     height: 640px;
@@ -1281,9 +1311,18 @@ body>section {
   section{
     padding-left: 16px;
     padding-right: 16px;
+    & h4{
+      margin-top: 0;
+    }
+    & h2{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 48px;
+    }
     &#section-1{
       padding-top: 56px;
-      padding-bottom: 40px;
+      padding-bottom: 72px;
       margin-bottom: 0;
       & .overlaps{
         flex-direction: column;
@@ -1300,9 +1339,76 @@ body>section {
         color: #262930;
         }
       }
+      & h4{
+        margin-top: 128px;
+      }
+    }
+    &#section-3{
+      padding: 56px 16px 72px 16px;
+      & .row{
+        flex-direction: column-reverse;
+      }
+      & .center{
+        height: auto;
+        min-height: 272px;
+        width: calc(100% - 32px);
+        margin-left: 32px;
+        & .bottom{
+          left: -32px;
+        }
+      }
+      & .textarea{
+        margin-right: 0;
+        margin-top: 72px;
+        & h2{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 48px;
+        }
+      }
+    }
+    &#section-14{
+      padding: 56px 0 72px 0;
+      overflow-x: scroll;
+      & .container{
+        & .row{
+          margin-left: 0;
+          margin-right: 0;
+          &:nth-of-type(3){
+            flex-direction: column-reverse;
+          }
+        }
+      }
+      & .center{
+        height: auto;
+        min-height: 272px;
+        width: calc(100% - 32px);
+        & .bottom{
+          right: -32px;
+        }
+      }
+      & .textarea{
+        margin-right: 0;
+        margin-top: 72px;
+        & h2{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 48px;
+        }
+      }
+      & table{
+        overflow-x: scroll;
+        margin-bottom: 48px;
+        & .row{
+          flex-wrap: nowrap;
+        }
+      }
     }
     & .center{
-      height: 248px;
+      height: auto;
+      min-height: 248px;
       width: calc(100% - 32px);
       & .bottom{
         right: -32px;
@@ -1317,7 +1423,87 @@ body>section {
     & .top{
       margin-left: 0;
     }
+    &#key-figures{
+      padding: 56px 16px 48px 16px;
+      & .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+      & .slick-slider{
+        width: 100%;
+        position: relative;
+        .slick-prev, .slick-next{
+          display: none!important;
+        }
+      }
+      & .figure{
+        margin: 0;
+        border-bottom: none;
+      }
+      & .figure-header{
+        flex-direction: column;
+      }
+      & p{
+        text-align: center;
+      }
+      & .key-slick{
+        & .slick-prev.prev, .slick-next.next{
+            display: block;
+        }
+        & .slick-dots{
+          display: none!important;
+        }
+      }
+      & .arrows{
+        display: flex;
+        padding-top: 72px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        justify-content: center;
+        & a{
+          cursor: pointer;
+        }
+        & p{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: #FFFFFF;
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+        & img{
+          width: 32px;
+        }
+      }
+    }
   }
+  #accordion-1{
+    padding-top: 56px;
+    padding-bottom: 40px;
+    & .center{
+      width: calc(100% - 32px);
+      height: auto;
+      min-height: 272px;
+      & .bottom{
+        right: -32px;
+      }
+    }
+    & .accordion-wrap{
+      margin-top: 72px;
+    }
+  }
+  section hr + .row{
+    margin-top: 48px;
+  }
+
+
+
 
 
 }
