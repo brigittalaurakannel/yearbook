@@ -12,8 +12,8 @@ $(function(){
 
   	          if (position >= target) {
   	            // console.log(id + ":" + target);
-  	              $('.header-items a').removeClass('active');
-  	              $('.header-items a[href=\\#' + id + ']').addClass('active');
+  	              $('.menu-items a').removeClass('active');
+  	              $('.menu-items a[href=\\#' + id + ']').addClass('active');
   	          }
   	      });
   	  });
@@ -26,6 +26,41 @@ $(function(){
   		} else {
   			 $(".header-lower").removeClass("sticky");
   	}})
+
+    if ($(window).width() < 769) {
+        $(window).on("scroll", function() {
+          if($(window).scrollTop() > 72 ){
+              $("header").addClass("sticky");
+          } else {
+             $("header").removeClass("sticky");
+        }})
+    }
+    /* mob menu open/close */
+
+    $('.burger').on('click', function(){
+      $('.mob-menu').addClass('open');
+      $('.burger').css('display', 'none');
+      $('.close-menu').css('display', 'block');
+      $('.menu-item').on('click', function(){
+        $('.mob-menu').removeClass('open');
+        $('.burger').css('display', 'block');
+        $('.close-menu').css('display', 'none');
+      })
+        $(window).on("scroll", function() {
+        if($(window).scrollTop() > 10 ){
+           $('header').addClass('sticky');
+        } else {
+           $('header').removeClass('sticky');
+      }})
+    })
+    $('.close-menu').on('click', function(){
+      $('.mob-menu').removeClass('open');
+      $('.burger').css('display', 'block');
+      $('.close-menu').css('display', 'none');
+    })
+    $('.burger, .close-menu, .mob-menu a').on('click', function(){
+      $("html, body, .wrapper").toggleClass("noScroll");
+    })
 
     /* read more section function*/
 
@@ -46,17 +81,27 @@ $(function(){
       $status.text(i + '/' + slick.slideCount);
   });
   $slickElement.slick({
-      // autoplay: true,
+      infinite: false,
       dots: true,
       arrows: true,
-      prevArrow: $(".prevSlide"),
-      nextArrow: $(".nextSlide")
+      prevArrow: $("#figurePrev"),
+      nextArrow: $("#figureNext")
+  });
+
+  /* awards slider */
+  $('.awards-slider').slick({
+    autoplaySpeed: 2000,
+    arrows: true,
+    prevArrow: $("#awardSlide"),
+    nextArrow: $("#awardSlide")
   });
     /* quotes slider */
     $('.slick-carousel').slick({
       // autoplay: true,
       autoplaySpeed: 2000,
-      arrows: true
+      arrows: true,
+      prevArrow: $("#quotePrev"),
+      nextArrow: $("#quoteNext")
   	});
     $('.slick-carousel .slick-next').append('<img src="assets/arrow-right.svg">');
     $('.slick-carousel .slick-prev').append('<img src="assets/arrow-left.svg">');
