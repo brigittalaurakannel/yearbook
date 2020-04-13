@@ -2048,9 +2048,9 @@ section {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
   section#section-10 .bluequote{
-    display: block;
+    display: block!important;
   }
   section#quotes .bluequote{
-    display: block;
+    display: block!important;
   }
 }
