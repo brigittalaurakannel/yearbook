@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 [class*="col-"] {
   padding-left: 0;
@@ -699,6 +700,18 @@ section{
       color: #FFFFFF;
       margin-bottom: 64px;
     }
+    & h4{
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 34px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     & p{
       font-family: Montserrat;
       font-style: normal;
@@ -748,7 +761,7 @@ section{
       }
     }
     & h4{
-      font-family: Open Sans;
+      font-family: 'Open Sans', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 21px;
@@ -1118,6 +1131,14 @@ section {
       width: calc(100% - 32px);
       padding-bottom: 24px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      height: 100%;
+      p.small{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
     h4 {
       font-size: 28px;
@@ -1863,6 +1884,7 @@ section {
         }
         & .row{
           flex-wrap: nowrap;
+          min-width: 476px;
         }
       }
     }
@@ -2022,4 +2044,13 @@ section {
 
 
 
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  section#section-10.bluequote{
+    display: block;
+  }
+  section#quotes.bluequote{
+    display: block;
+  }
 }

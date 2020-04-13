@@ -92,8 +92,8 @@ $(function(){
   $('.awards-slider').slick({
     autoplaySpeed: 2000,
     arrows: true,
-    prevArrow: $("#awardSlide"),
-    nextArrow: $("#awardSlide")
+    prevArrow: $("#awardPrev"),
+    nextArrow: $("#awardNext")
   });
     /* quotes slider */
     $('.slick-carousel').slick({
