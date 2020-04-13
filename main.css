@@ -1144,7 +1144,8 @@ section .row .image-wrap .pattern {
     flex-direction: column;
     padding: 64px 16px;
     text-align: left;
-    background-color: #002B5B; }
+    background-color: #002B5B;
+    width: 100%; }
     .hero-after .blue p {
       font-family: Open Sans;
       font-style: normal;
@@ -1576,7 +1577,8 @@ section .row .image-wrap .pattern {
       #accordion-1 .center .bottom {
         right: -16px; }
     #accordion-1 .accordion-wrap {
-      margin-top: 72px; }
+      margin-top: 72px;
+      max-width: unset; }
 
   #accordion-2 {
     padding: 56px 0 72px 0; }
@@ -1590,7 +1592,8 @@ section .row .image-wrap .pattern {
         right: -16px;
         left: initial; }
     #accordion-2 .accordion-wrap {
-      margin-top: 72px; }
+      margin-top: 72px;
+      max-width: unset; }
 
   section hr + .row {
     margin-top: 48px; }
@@ -1602,6 +1605,10 @@ section .row .image-wrap .pattern {
     display: block !important; }
 
   section#quotes .bluequote {
-    display: block !important; } }
+    display: block !important; }
+
+  section .centeralign {
+    display: block;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

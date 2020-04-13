@@ -1435,6 +1435,7 @@ section {
       padding: 64px 16px;
       text-align: left;
       background-color: #002B5B;
+      width: 100%;
       & p{
         font-family: Open Sans;
         font-style: normal;
@@ -2012,6 +2013,7 @@ section {
     }
     & .accordion-wrap{
       margin-top: 72px;
+      max-width: unset;
     }
   }
   #accordion-2{
@@ -2030,6 +2032,7 @@ section {
     }
     & .accordion-wrap{
       margin-top: 72px;
+      max-width: unset;
     }
   }
   section hr + .row{
@@ -2052,5 +2055,9 @@ section {
   }
   section#quotes .bluequote{
     display: block!important;
+  }
+  section .centeralign{
+    display: block;
+    text-align: center;
   }
 }
