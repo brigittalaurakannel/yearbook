@@ -126,7 +126,8 @@ header {
         header .header-lower .menu-items .menu-item.active {
           color: #009DE8; }
     header .header-lower.sticky {
-      position: fixed; }
+      position: fixed;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); }
 
 .hero {
   background-image: url("images/hero.jpeg");
