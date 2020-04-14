@@ -765,7 +765,9 @@ section {
         line-height: 24px;
         text-align: right;
         color: #009DE8; }
-    section table tbody .row:nth-of-type(odd) {
+    section table tbody .row:nth-of-type(odd) .col-2 {
+      background-color: rgba(75, 78, 87, 0.05); }
+    section table tbody .row:nth-of-type(odd) .col-4 {
       background-color: rgba(75, 78, 87, 0.05); }
     section table tbody .col-4 {
       padding: 16px; }
@@ -1315,6 +1317,10 @@ section .row .image-wrap .pattern {
     section#section-8 table .row {
       flex-wrap: nowrap;
       margin-left: 0; }
+    section#section-8 table thead .col-2, section#section-8 table tbody .col-2 {
+      min-width: 124px; }
+      section#section-8 table thead .col-2 h5, section#section-8 table tbody .col-2 h5 {
+        text-align: center; }
   section#section-9 {
     padding: 56px 0 72px 0; }
     section#section-9 .textarea {

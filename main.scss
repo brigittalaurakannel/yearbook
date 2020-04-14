@@ -964,7 +964,10 @@ section{
       }
     }
     & tbody{
-      & .row:nth-of-type(odd){
+      & .row:nth-of-type(odd) .col-2{
+        background-color: rgba(75, 78, 87, 0.05);
+      }
+      & .row:nth-of-type(odd) .col-4{
         background-color: rgba(75, 78, 87, 0.05);
       }
       & .col-4{
@@ -1656,6 +1659,12 @@ section {
         & .row{
           flex-wrap: nowrap;
           margin-left: 0;
+        }
+        & thead .col-2, tbody .col-2{
+          min-width: 124px;
+          & h5{
+            text-align: center;
+          }
         }
       }
     }
