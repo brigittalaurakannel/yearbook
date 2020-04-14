@@ -139,7 +139,6 @@ header {
   .hero .blue {
     padding: 0 128px;
     background-color: #002B5B;
-    max-width: 672px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -164,6 +163,9 @@ header {
 
 section {
   width: 100%; }
+  section .slick-prev, section .slick-next {
+    min-width: fit-content;
+    min-height: fit-content; }
   section .more p span.close-sec {
     display: none; }
   section .more img {
@@ -395,7 +397,7 @@ section {
       max-width: 976px;
       width: 100%; }
       section#quotes .slick-slider .slick-next {
-        right: -53px; }
+        right: -80px; }
       section#quotes .slick-slider .slick-prev {
         left: -80px; }
     section#quotes .bluequote {
@@ -548,6 +550,9 @@ section {
     padding: 128px 0 144px 0; }
     section#section-13 .row {
       justify-content: center; }
+    section#section-13 img {
+      width: 48px;
+      height: 64px; }
     section#section-13 h2 {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
@@ -1031,6 +1036,9 @@ section .row .image-wrap .pattern {
     .accordion-wrap .faq-panel p {
       margin: 10px 0; }
 
+@media screen and (max-width: 1440px) {
+  .hero .blue {
+    padding: 0 64px; } }
 @media screen and (max-width: 768px) {
   .desktop {
     display: none; }
