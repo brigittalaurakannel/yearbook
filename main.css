@@ -20,6 +20,9 @@
 @media (max-width: 360px) {
   .container {
     max-width: 328px !important; } }
+html.noScroll {
+  overflow: hidden; }
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -1088,7 +1091,7 @@ section .row .image-wrap .pattern {
     z-index: 99;
     overflow-y: scroll;
     padding-bottom: 48px;
-    justify-content: space-evenly; }
+    justify-content: space-between; }
     .mob-menu .menu-items {
       display: flex;
       flex-direction: column;

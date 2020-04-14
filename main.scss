@@ -28,6 +28,9 @@
     max-width: 328px!important;
   }
 }
+html.noScroll{
+  overflow: hidden;
+}
 body{
   overflow-x: hidden;
   width: 100%;
@@ -1374,7 +1377,7 @@ section {
     z-index: 99;
     overflow-y: scroll;
     padding-bottom: 48px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     & .menu-items{
       display: flex;
       flex-direction: column;
