@@ -1314,7 +1314,9 @@ section {
   .hero .blue{
     padding: 0 64px;
   }
-
+  .hero .blue p.title{
+    font-size: 42px;
+  }
 }
 @media screen and (max-width: 768px){
   .desktop{
@@ -1443,6 +1445,7 @@ section {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      padding-top: 16px;
       & a{
         font-family: Open Sans;
         font-style: normal;
@@ -1525,6 +1528,10 @@ section {
     & .scrollthing{
       overflow-x: auto;
     }
+    & .bigPic{
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     &#section-1{
       padding-top: 56px;
       padding-bottom: 72px;
@@ -1554,12 +1561,16 @@ section {
       padding: 56px 16px 72px 16px;
       & .row{
         flex-direction: column-reverse;
+        & .offset-lg-1.col-lg-6{
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
       & .center{
         height: auto;
         min-height: 249px;
         width: calc(100% - 16px);
-        margin-left: 32px;
+        margin-left: 16px;
         & .bottom{
           left: -16px;
         }
@@ -2120,5 +2131,17 @@ section {
   section .centeralign{
     display: block;
     text-align: center;
+  }
+  section table thead .col4{
+    display: inline;
+  }
+  section table tbody .col4{
+    display: inline;
+  }
+  section table thead .col2{
+    width: 180px;
+  }
+  section table thead .col2{
+    width: 195px;
   }
 }
