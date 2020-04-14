@@ -1150,7 +1150,7 @@ section .row .image-wrap .pattern {
       flex-direction: row;
       justify-content: center;
       margin-top: 48px;
-      padding-top: 16px;
+      padding-top: 14px;
       border-top: 1px solid rgba(75, 78, 87, 0.2); }
       .mob-menu .lang-switch a {
         font-family: 'Open Sans', sans-serif;
@@ -1247,6 +1247,9 @@ section .row .image-wrap .pattern {
     section#section-3 .row {
       flex-direction: column-reverse; }
       section#section-3 .row .offset-lg-1.col-lg-6 {
+        padding-left: 0;
+        padding-right: 0; }
+      section#section-3 .row .col-lg-5 {
         padding-left: 0;
         padding-right: 0; }
     section#section-3 .center {
@@ -1508,6 +1511,9 @@ section .row .image-wrap .pattern {
       margin-right: 0; }
       section#section-14 .container .row.secondrow {
         flex-direction: column-reverse; }
+      section#section-14 .container .row .col-lg-5 {
+        padding-left: 0;
+        padding-right: 0; }
       section#section-14 .container .row .col-lg-6 {
         padding-left: 0;
         padding-right: 0; }
