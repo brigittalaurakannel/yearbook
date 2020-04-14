@@ -99,13 +99,18 @@ $(function(){
     $('.slick-carousel').slick({
       // autoplay: true,
       autoplaySpeed: 2000,
-      arrows: true,
-      prevArrow: $("#quotePrev"),
-      nextArrow: $("#quoteNext")
+      arrows: true
   	});
     $('.slick-carousel .slick-next').append('<img src="assets/arrow-right.svg">');
     $('.slick-carousel .slick-prev').append('<img src="assets/arrow-left.svg">');
 
+    $('.mobile-slick-carousel').slick({
+      // autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      prevArrow: $("#quotePrev"),
+      nextArrow: $("#quoteNext")
+    });
     /* gallery */
 
     $('#projects-gallery').lightGallery({

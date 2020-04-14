@@ -623,6 +623,9 @@ section{
         letter-spacing: 1px;
         color: #FFFFFF;
         margin-bottom: 32px;
+        & span{
+          font-style: normal;
+        }
       }
       & p.bold{
         font-family: Roboto;
@@ -1418,7 +1421,6 @@ section {
     }
   }
   .hero{
-    background-image: url('images/hero-mobile.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 320px;
@@ -1614,11 +1616,12 @@ section {
           line-height: 34px;
           letter-spacing: 1px;
         }
-        & p.quote{}
+        & p.quote{
         font-weight: bold;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 1px;
+        }
       }
     }
     &#section-11{
@@ -1927,6 +1930,9 @@ section {
         &:last-of-type{
           margin-bottom: 0;
         }
+        & *{
+          text-align: center;
+        }
       }
       & .slick-slider{
         width: 100%;
@@ -1941,6 +1947,9 @@ section {
       }
       & .figure-header{
         flex-direction: column;
+        & img{
+          margin-right: 0;
+        }
       }
       & p{
         text-align: center;

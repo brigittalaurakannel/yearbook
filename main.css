@@ -496,6 +496,8 @@ section {
         letter-spacing: 1px;
         color: #FFFFFF;
         margin-bottom: 32px; }
+        section#section-10 .bluequote p.quote span {
+          font-style: normal; }
       section#section-10 .bluequote p.bold {
         font-family: Roboto;
         font-style: normal;
@@ -1130,7 +1132,6 @@ section .row .image-wrap .pattern {
       display: flex; }
 
   .hero {
-    background-image: url("images/hero-mobile.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 320px;
@@ -1276,15 +1277,16 @@ section .row .image-wrap .pattern {
   section#section-10 {
     padding: 56px 0 32px 0; }
     section#section-10 .bluequote {
-      padding: 72px 32px 48px 32px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 1px; }
+      padding: 72px 32px 48px 32px; }
       section#section-10 .bluequote p {
         font-weight: bold;
         font-size: 21px;
         line-height: 34px;
+        letter-spacing: 1px; }
+      section#section-10 .bluequote p.quote {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
         letter-spacing: 1px; }
   section#section-11 {
     background-image: none;
@@ -1516,6 +1518,8 @@ section .row .image-wrap .pattern {
       margin-right: 0; }
       section#key-figures .row:last-of-type {
         margin-bottom: 0; }
+      section#key-figures .row * {
+        text-align: center; }
     section#key-figures .slick-slider {
       width: 100%;
       position: relative; }
@@ -1526,6 +1530,8 @@ section .row .image-wrap .pattern {
       border-bottom: none; }
     section#key-figures .figure-header {
       flex-direction: column; }
+      section#key-figures .figure-header img {
+        margin-right: 0; }
     section#key-figures p {
       text-align: center; }
     section#key-figures .key-slick .slick-prev.prev, section#key-figures .key-slick .slick-next.next {
