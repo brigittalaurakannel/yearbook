@@ -119,9 +119,10 @@ header{
     background-color: #009DE8;
     padding: 8px;
     margin: auto;
-    display: inline-flex;
+    display: flex;
     cursor: pointer;
     margin-right: 32px;
+    align-items: center;
     & p{
       font-family: Montserrat;
       font-style: normal;
@@ -488,6 +489,9 @@ section{
     & .row{
       justify-content: center;
     }
+    & .slick-slide{
+      background-color: #002B5B;
+    }
     & .slick-slider{
       max-width: 976px;
       width: 100%;
@@ -542,7 +546,7 @@ section{
       display: flex;
       align-items: center;
     }
-    .slick-slide.slick-current.slick-active{
+    .slick-slide{
       background-color: #002B5B;
     }
     .slick-prev:before, .slick-next:before{
@@ -1749,7 +1753,7 @@ section {
           color: #FFFFFF;
         }
       }
-      & .slick-initialized .slick-slide{
+       .slick-slide{
         background-color: #002B5B;
       }
       & .arrows{
