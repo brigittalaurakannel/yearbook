@@ -1370,10 +1370,11 @@ section {
     right: 0;
     bottom: 0;
     top: 88px;
-    height: auto;
+    height: 100vh;
     z-index: 99;
     overflow-y: scroll;
     padding-bottom: 48px;
+    justify-content: space-evenly;
     & .menu-items{
       display: flex;
       flex-direction: column;
@@ -1385,7 +1386,7 @@ section {
         font-size: 16px;
         line-height: 24px;
         color: #002B5B;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         text-align: center;
         &.active{
           color: #009DE8
@@ -1395,7 +1396,7 @@ section {
     & .blue-btn{
       background-color: #009DE8;
       padding: 8px;
-      margin: auto;
+      margin-bottom: 48px;
       display: inline-flex;
       cursor: pointer;
       margin-top: 40px;
