@@ -1426,7 +1426,7 @@ section .row .image-wrap .pattern {
       section#section-13 .slick-slider .slick-prev, section#section-13 .slick-slider .slick-next {
         display: none !important; }
   section#quotes {
-    padding: 40px 32px 0 32px; }
+    padding: 40px 32px 48px 32px; }
     section#quotes .slider p {
       font-family: Montserrat;
       font-style: normal;
@@ -1445,7 +1445,11 @@ section .row .image-wrap .pattern {
       color: #FFFFFF; }
     section#quotes .slick-slide {
       background-color: #002B5B;
-      padding-bottom: 48px; }
+      padding-bottom: 48px;
+      opacity: 0;
+      transition: 0.2s ease; }
+      section#quotes .slick-slide.slick-active {
+        opacity: 1; }
     section#quotes .arrows {
       display: flex;
       padding-top: 72px;
@@ -1461,7 +1465,7 @@ section .row .image-wrap .pattern {
       section#quotes .arrows .nextSlide img {
         margin-right: 0; }
     section#quotes .bluequote {
-      padding: 72px 16px 48px 16px; }
+      padding: 72px 16px 0 16px; }
       section#quotes .bluequote.longtext {
         margin-bottom: 32px; }
         section#quotes .bluequote.longtext .moretext {

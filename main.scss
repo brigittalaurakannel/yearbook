@@ -1805,7 +1805,7 @@ section {
       }
     }
     &#quotes{
-      padding: 40px 32px 0 32px;
+      padding: 40px 32px 48px 32px;
       & .slider{
         & p{
           font-family: Montserrat;
@@ -1829,6 +1829,11 @@ section {
        .slick-slide{
         background-color: #002B5B;
         padding-bottom: 48px;
+        opacity: 0;
+        transition: 0.2s ease;
+        &.slick-active{
+          opacity: 1;
+        }
       }
       & .arrows{
         display: flex;
@@ -1849,7 +1854,7 @@ section {
         }
       }
       & .bluequote{
-        padding: 72px 16px 48px 16px;
+        padding: 72px 16px 0 16px;
         &.longtext{
           margin-bottom: 32px;
           & .moretext{
