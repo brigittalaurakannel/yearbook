@@ -1372,12 +1372,38 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 88px;
+    top: 0;
     height: 100vh;
     z-index: 99;
     overflow-y: scroll;
     padding-bottom: 48px;
     justify-content: space-between;
+    & .header-upper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin: 0;
+      width: 100%;
+      padding: 28px 16px;
+      & .header-left{
+        & img{
+          height: 24px;
+        }
+      }
+      & .header-right{
+        display: flex;
+        align-items: center;
+        & .lang-switch{
+          display: none;
+        }
+      }
+      & .blue-btn{
+        display: none;
+      }
+    }
     & .menu-items{
       display: flex;
       flex-direction: column;
