@@ -1084,12 +1084,11 @@ section .row .image-wrap .pattern {
     right: 0;
     bottom: 0;
     top: 88px;
-    height: 100%;
+    height: auto;
     z-index: 99;
     overflow-y: scroll;
     padding-bottom: 48px; }
     .mob-menu .menu-items {
-      margin-top: 48px;
       display: flex;
       flex-direction: column;
       justify-content: center; }
@@ -1100,7 +1099,7 @@ section .row .image-wrap .pattern {
         font-size: 16px;
         line-height: 24px;
         color: #002B5B;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         text-align: center; }
         .mob-menu .menu-items a.active {
           color: #009DE8; }
