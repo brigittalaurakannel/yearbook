@@ -1645,6 +1645,9 @@ section .row .image-wrap .pattern {
   section#section-10 .bluequote {
     display: block !important; }
 
+  section#quotes {
+    display: block; }
+
   section#quotes .bluequote {
     display: block !important; }
 
