@@ -1680,6 +1680,9 @@ section .row .image-wrap .pattern {
 
   footer .footer-upper {
     width: 100%; } }
+@-moz-document url-prefix() {
+  section#quotes .slick-slider .slick-next {
+    right: -58px; } }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   section#section-10 .bluequote {
     display: block !important; }
