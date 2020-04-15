@@ -498,6 +498,11 @@ section{
     }
     & .slick-slide{
       background-color: #002B5B;
+      opacity: 0;
+      transition: 0.2s ease;
+      &.slick-active{
+        opacity: 1;
+      }
     }
     & .slick-slider{
       max-width: 976px;
@@ -2185,7 +2190,7 @@ section {
           display: inline;
         }
         & .col-2{
-          width: 180px;
+          width: 195px;
         }
       }
       & tbody{

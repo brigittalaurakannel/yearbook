@@ -395,7 +395,11 @@ section {
     section#quotes .row {
       justify-content: center; }
     section#quotes .slick-slide {
-      background-color: #002B5B; }
+      background-color: #002B5B;
+      opacity: 0;
+      transition: 0.2s ease; }
+      section#quotes .slick-slide.slick-active {
+        opacity: 1; }
     section#quotes .slick-slider {
       max-width: 976px;
       width: 100%; }
@@ -1708,7 +1712,7 @@ section .row .image-wrap .pattern {
   section table thead .col-4 {
     display: inline; }
   section table thead .col-2 {
-    width: 180px; }
+    width: 195px; }
   section table tbody .col-4 {
     display: inline; }
   section table tbody .col-2 {
