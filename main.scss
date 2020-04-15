@@ -1691,10 +1691,11 @@ section {
       & .bluequote{
         padding: 72px 32px 48px 32px;
         & p{
-          font-weight: bold;
-          font-size: 21px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
           line-height: 34px;
-          letter-spacing: 1px;
         }
         & p.quote{
         font-weight: bold;
@@ -2158,6 +2159,9 @@ section {
   section#quotes .bluequote{
     display: block!important;
   }
+  section#quotes .slick-slider .slick-next{
+    right: -58px;
+  }
   section .centeralign{
     display: block;
     text-align: center;
@@ -2173,5 +2177,25 @@ section {
   }
   section table thead .col2{
     width: 195px;
+  }
+  section{
+    & table{
+      & thead{
+        & .col-4{
+          display: inline;
+        }
+        & .col-2{
+          width: 180px;
+        }
+      }
+      & tbody{
+        & .col-4{
+          display: inline;
+        }
+        & .col-2{
+          width: 195px;
+        }
+      }
+    }
   }
 }

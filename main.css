@@ -1340,10 +1340,11 @@ section .row .image-wrap .pattern {
     section#section-10 .bluequote {
       padding: 72px 32px 48px 32px; }
       section#section-10 .bluequote p {
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 34px;
-        letter-spacing: 1px; }
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 34px; }
       section#section-10 .bluequote p.quote {
         font-weight: bold;
         font-size: 14px;
@@ -1685,6 +1686,9 @@ section .row .image-wrap .pattern {
   section#quotes .bluequote {
     display: block !important; }
 
+  section#quotes .slick-slider .slick-next {
+    right: -58px; }
+
   section .centeralign {
     display: block;
     text-align: center; }
@@ -1699,6 +1703,15 @@ section .row .image-wrap .pattern {
     width: 180px; }
 
   section table thead .col2 {
+    width: 195px; }
+
+  section table thead .col-4 {
+    display: inline; }
+  section table thead .col-2 {
+    width: 180px; }
+  section table tbody .col-4 {
+    display: inline; }
+  section table tbody .col-2 {
     width: 195px; } }
 
 /*# sourceMappingURL=main.css.map */
