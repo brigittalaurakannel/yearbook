@@ -1399,7 +1399,7 @@ section {
       padding-bottom: 0;
       margin: 0;
       width: 100%;
-      padding: 28px 16px;
+      padding: 28px 16px 8px 28px;;
       margin-bottom: 48px;
       & .header-left{
         & img{
@@ -1428,7 +1428,7 @@ section {
         font-size: 16px;
         line-height: 24px;
         color: #002B5B;
-        margin-bottom: 24px;
+        margin-bottom: 8px;
         text-align: center;
         &.active{
           color: #009DE8
@@ -1441,7 +1441,7 @@ section {
       margin-bottom: 48px;
       display: inline-flex;
       cursor: pointer;
-      margin-top: 40px;
+      margin-top: 16px;
       & p{
         font-family: Montserrat;
         font-style: normal;
@@ -1456,7 +1456,6 @@ section {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-top: 48px;
       padding-top: 14px;
       border-top: 1px solid rgba(75, 78, 87, 0.2);
       & a{
