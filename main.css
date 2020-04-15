@@ -1221,6 +1221,8 @@ section .row .image-wrap .pattern {
     line-height: 48px; }
   section .scrollthing {
     overflow-x: auto; }
+  section .centeralign {
+    margin-bottom: 40px; }
   section .bigPic {
     padding-left: 16px;
     padding-right: 16px; }
