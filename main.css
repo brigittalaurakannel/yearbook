@@ -168,7 +168,9 @@ section {
   width: 100%; }
   section .slick-prev, section .slick-next {
     min-width: fit-content;
-    min-height: fit-content; }
+    min-height: fit-content;
+    width: 48px;
+    height: 48px; }
   section .more p span.close-sec {
     display: none; }
   section .more img {
@@ -1680,9 +1682,6 @@ section .row .image-wrap .pattern {
 
   footer .footer-upper {
     width: 100%; } }
-@-moz-document url-prefix() {
-  section#quotes .slick-slider .slick-next {
-    right: -58px; } }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   section#section-10 .bluequote {
     display: block !important; }
@@ -1692,9 +1691,6 @@ section .row .image-wrap .pattern {
 
   section#quotes .bluequote {
     display: block !important; }
-
-  section#quotes .slick-slider .slick-next {
-    right: -58px; }
 
   section .centeralign {
     display: block;
