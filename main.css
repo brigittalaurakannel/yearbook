@@ -560,8 +560,7 @@ section {
     section#section-13 .row {
       justify-content: center; }
     section#section-13 img {
-      width: 48px;
-      height: 64px; }
+      width: 48px; }
     section#section-13 h2 {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
@@ -1112,7 +1111,8 @@ section .row .image-wrap .pattern {
       padding-bottom: 0;
       margin: 0;
       width: 100%;
-      padding: 28px 16px 8px 28px; }
+      padding: 28px 16px 8px 16px;
+      margin-bottom: 16px; }
       .mob-menu .header-upper .header-left img {
         height: 24px; }
       .mob-menu .header-upper .header-right {
